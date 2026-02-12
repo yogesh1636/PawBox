@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawBox - Every street cat deserves warmth, food, and love</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span class="logo-text">PawBox</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#adopt" class="nav-link">Adopt</a>
+                <a href="#help" class="nav-link">Help</a>
+                <a href="#donate" class="nav-link">Donate</a>
+                <a href="#stories" class="nav-link">Stories</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="video/cat.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">They live on the streets.<br>But they deserve a home.</h1>
+            <p class="hero-subtitle">Together, we can change the life of a street pets.</p>
+            <div class="hero-buttons">
+                <a href="#adopt" class="btn btn-primary">Adopt a Pets</a>
+                <a href="#donate" class="btn btn-secondary">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Street Pets Matter -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Why Street Pets Matter</h2>
+            <div class="grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">🏠</div>
+                    <h3 class="card-title">No Shelter</h3>
+                    <p class="card-text">They face harsh weather with nowhere to hide</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon">🍽️</div>
+                    <h3 class="card-title">No Regular Food</h3>
+                    <p class="card-text">Struggling daily to find their next meal</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon">💉</div>
+                    <h3 class="card-title">No Medical Care</h3>
+                    <p class="card-text">Suffering from injuries and diseases untreated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Pets -->
+    <section class="section bg-beige">
+        <div class="container">
+            <h2 class="section-title">Meet Our Pets</h2>
+            <div class="grid-4" id="cats-grid"></div>
+            <div class="text-center">
+                <a href="#adopt" class="btn btn-primary">View All Pets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-section">
+        <video autoplay loop muted playsinline class="cta-video">
+            <source src="video/dog.mp4" type="video/mp4">
+        </video>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">"You can't save every cat, but you can save one."</h2>
+            <a href="#help" class="btn btn-outline">Help a Pets Today</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container-small">
+            <h1 class="page-title">About Street Pets</h1>
+            <div class="content-section">
+                <h2 class="content-title">Who Are Street Pets?</h2>
+                <p class="content-text">Street Pets are innocent souls living without shelter, food, or care. They face daily struggles that most of us can't imagine. Every day is a battle for survival, yet they continue to show resilience and hope.</p>
+            </div>
+            <div class="content-section">
+                <h2 class="content-title">Daily Struggles</h2>
+                <div class="struggle-card">
+                    <h3 class="struggle-title">Hunger</h3>
+                    <p class="struggle-text">Most street Pets go days without a proper meal, scavenging through garbage for survival.</p>
+                </div>
+                <div class="struggle-card">
+                    <h3 class="struggle-title">Weather</h3>
+                    <p class="struggle-text">Extreme heat, cold, and rain with no shelter to protect them.</p>
+                </div>
+                <div class="struggle-card">
+                    <h3 class="struggle-title">Injuries</h3>
+                    <p class="struggle-text">Accidents, fights, and diseases go untreated, causing immense suffering.</p>
+                </div>
+                <div class="struggle-card">
+                    <h3 class="struggle-title">Fear</h3>
+                    <p class="struggle-text">Constant fear of humans, vehicles, and other animals makes every moment stressful.</p>
+                </div>
+            </div>
+            <div class="content-section">
+                <h2 class="content-title">Why Your Help Matters</h2>
+                <ul class="help-list">
+                    <li>Every meal you provide saves a life from starvation</li>
+                    <li>Medical care prevents suffering and death from treatable conditions</li>
+                    <li>Adoption gives them a chance at a loving, safe home</li>
+                    <li>Your support creates awareness and inspires others to help</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adopt Section -->
+    <section id="adopt" class="section">
+        <div class="container">
+            <h1 class="page-title">Adopt a Cat</h1>
+            <p class="page-subtitle">Give a street cat the loving home they deserve</p>
+            <div class="grid-3" id="adopt-grid"></div>
+            <div id="adoption-form" class="form-container hidden">
+                <h2 class="form-title">Adoption Form - <span id="selected-cat"></span></h2>
+                <form id="adopt-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <input type="text" placeholder="City" required>
+                    <textarea placeholder="Why do you want to adopt?" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="section bg-light">
+        <div class="container">
+            <h1 class="page-title">How You Can Help</h1>
+            <p class="page-subtitle">Every small action creates a big impact</p>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-icon-lg">🍽️</div>
+                    <h3 class="card-title-lg">Feed a Cat</h3>
+                    <p class="card-text">Provide regular meals to street Pets in your area. Even one meal can make a difference.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon-lg">🏠</div>
+                    <h3 class="card-title-lg">Build a Shelter</h3>
+                    <p class="card-text">Create simple shelters to protect Pets from harsh weather conditions.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon-lg">💉</div>
+                    <h3 class="card-title-lg">Medical Help</h3>
+                    <p class="card-text">Support medical treatment for injured or sick street Pets.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon-lg">🤝</div>
+                    <h3 class="card-title-lg">Volunteer</h3>
+                    <p class="card-text">Join our team to rescue, care for, and find homes for street Pets.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="section">
+        <div class="container-small">
+            <h1 class="page-title">Make a Donation</h1>
+            <p class="page-subtitle">Your contribution directly helps street Pets survive and thrive</p>
+            <h2 class="section-title">Your Impact</h2>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <h3 class="impact-amount">₹100</h3>
+                    <p class="card-text">3 meals for a hungry cat</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="impact-amount">₹500</h3>
+                    <p class="card-text">Medical aid for an injured cat</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="impact-amount">₹1000</h3>
+                    <p class="card-text">Shelter support for multiple Pets</p>
+                </div>
+            </div>
+            <div class="donate-form">
+                <h2 class="form-title">Choose Your Contribution</h2>
+                <div class="amount-grid">
+                    <button class="amount-btn" data-amount="₹100">₹100</button>
+                    <button class="amount-btn" data-amount="₹500">₹500</button>
+                    <button class="amount-btn" data-amount="₹1000">₹1000</button>
+                </div>
+                <input type="number" id="custom-amount" placeholder="Custom Amount" class="form-input">
+                <h3 class="payment-title">Payment Options</h3>
+                <button class="payment-btn">UPI Payment</button>
+                <button class="payment-btn">Card Payment</button>
+                <button class="payment-btn">Wallet</button>
+                <button class="btn btn-primary btn-full" id="donate-btn">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="section bg-light">
+        <div class="container">
+            <h1 class="page-title">Success Stories</h1>
+            <p class="page-subtitle">Every rescue tells a story of hope and transformation</p>
+            <div class="grid-2" id="stories-grid"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container-small">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you</p>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="card-title">Email</h3>
+                    <p class="card-text">help@pawbox.org</p>
+                </div>
+                <div class="card text-center">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="card-title">WhatsApp</h3>
+                    <p class="card-text">+91 7208501636</p>
+                </div>
+                <div class="card text-center">
+                    <div class="contact-icon">📸</div>
+                    <h3 class="card-title">Instagram</h3>
+                    <p class="card-text">@pawbox</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2 class="form-title">Send us a Message</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="footer-icon">🐾</span>
+                <h3 class="footer-title">PawBox</h3>
+                <p class="footer-text">Every street cat deserves warmth, food, and love.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Twitter</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 PawBox. Built with ❤️ for street Pets.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
